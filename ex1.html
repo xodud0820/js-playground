@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>소수판별</h1>
+    <script>
+      // var r = 0;
+      // var n = 1;
+      // while (n <= 100) {
+      //   r = r + n;
+      //   console.log(r, n);
+      //   n++;
+      // }
+      // for (var n = 1; n <= 100; n++) {
+      //   if (n % 2 == 0) {
+      //     r = r + n;
+      //     console.log(r, n);
+      //   }
+      // }
+      // document.write('1부터 100까지의 합은 ' + r + '입니다.');
+      // for (var n = 100; n >= 0; n--) {
+      //   console.log(n);
+      // }
+      // var sum = 0;
+      // var n = 1;
+      // while (!n == 0) {
+      //   n = Number(prompt('숫자를 입력해주세요. (0 = 종료)'));
+      //   sum += n;
+      //   console.log(n, sum);
+      // }
+      // document.write('입력한 수의 합은 ' + sum + '이다.');
+      var isPrime = true;
+      var n = Number(prompt('숫자를 입력하세요'));
+      for (var i = 2; i < n; i++) {
+        if (n % i === 0) {
+          isPrime = false;
+          break;
+        }
+      }
+      if (!isPrime) {
+        document.write(n + '은 소수가 아닙니다.  [ ' + i + ' ]');
+      } else {
+        document.write(n + '은 소수입니다.');
+      }
+    </script>
+  </body>
+</html>
